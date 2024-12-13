@@ -52,6 +52,15 @@
     "lodash": "4.17.21"
   },
   "addons": [
+    "@eeacms/volto-accordion-block",
+    "@eeacms/volto-columns-block",
+    "@eeacms/volto-corsproxy",
+    "@kitconcept/volto-button-block",
+    "@kitconcept/volto-heading-block",
+    "@kitconcept/volto-highlight-block",
+    "@kitconcept/volto-introduction-block",
+    "@kitconcept/volto-separator-block",
+    "@kitconcept/volto-slider-block",
     "@kitconcept/volto-light-theme"
   ]
 }
