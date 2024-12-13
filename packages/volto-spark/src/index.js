@@ -1,4 +1,14 @@
+import PlannerTemplate from './customizations/volto/components/manage/Blocks/Listing/PlannerTemplate';
+
 const applyConfig = (config) => {
+  config.blocks.blocksConfig.listing.variations = [
+    ...config.blocks.blocksConfig.listing.variations,
+    {
+      id: 'listingPlanner',
+      title: 'Planner',
+      template: PlannerTemplate,
+    },
+  ];
   config.blocks.themes = [
     {
       style: {

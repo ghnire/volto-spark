@@ -1,27 +1,42 @@
 .sph-home-news {
-  .listing-body p {
-    border-radius: 5px;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    font-size: 0.9rem !important;
+  .items {
+    background-color: #fff !important;
+    padding-bottom: 40px;
+    margin-right: 30px;
+    .listing-item {
+      background-color: inherit;
+      margin-bottom: 5px;
+      a {
+        background-color: inherit;
+        padding: 10px;
+      }
+      .listing-body {
+        h3 {
+          color: #293676 !important;
+        }
+        p {
+          border-radius: 5px;
+          background-color: inherit;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          font-size: 0.9rem !important;
+        }
+      }
+    }
   }
 }
 .sph-home-events {
   padding-left: 20px;
-  div {
-  }
+  color: #5e6a71;
   #events {
-    border: 0.5px solid #00b4c1;
+    border: 0.5px solid #00b3c0;
     border-radius: 5px;
     margin-bottom: 10px;
     background: linear-gradient(
       90deg,
-      rgba(41, 54, 118, 1) 0%,
-      rgba(30, 98, 156, 1) 45%,
-      rgba(0, 212, 255, 1) 100%
+      rgba(0, 212, 255, 1) 70%,
+      rgba(41, 54, 118, 1) 100%
     );
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    color: white;
     font-weight: 700;
     text-align: center;
   }
@@ -33,13 +48,46 @@
     background: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
-    .listing-body h2 {
-      margin-top: 5px;
-      margin-bottom: 5px;
-      background: white;
-      color: #5e6a72 !important;
-      //color: #000 !important;
-      font-size: 1.1rem !important;
+    .listing-body {
+      padding-top: 10px;
+      .listing-event-whenwhere {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+      }
+      .listing-event-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .listing-event-date-row {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+        }
+        .third {
+          width: 33%;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .dontwrap {
+        word-break: normal !important;
+        word-wrap: normal !important;
+      }
+      h2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background: white;
+        color: #5e6a72 !important;
+        //color: #000 !important;
+        font-size: 1.1rem !important;
+      }
+      h3 {
+        color: #293676 !important;
+      }
+      span {
+        color: #5e6a71 !important;
+      }
     }
     .listing-body p {
       border-top: 2px solid #00b4c1;
