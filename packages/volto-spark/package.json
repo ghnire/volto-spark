@@ -26,7 +26,6 @@
     "release-major-alpha": "release-it major --preRelease=alpha",
     "release-alpha": "release-it --preRelease=alpha"
   },
-  "dependencies": {},
   "peerDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -34,5 +33,24 @@
   "devDependencies": {
     "@plone/scripts": "^3.6.1",
     "release-it": "^17.1.1"
-  }
+  },
+  "dependencies": {
+    "@eeacms/volto-accordion-block": "10.4.6",
+    "@eeacms/volto-columns-block": "^8.0.1",
+    "@eeacms/volto-corsproxy": "^4.0.0",
+    "@kitconcept/volto-button-block": "3.0.3",
+    "@kitconcept/volto-heading-block": "2.4.0",
+    "@kitconcept/volto-highlight-block": "4.0.0",
+    "@kitconcept/volto-introduction-block": "1.0.0",
+    "@kitconcept/volto-light-theme": "6.0.0-alpha.7",
+    "@kitconcept/volto-separator-block": "4.1.2",
+    "@plone/components": "^3.0.0",
+    "classnames": "2.2.6",
+    "embla-carousel-autoplay": "^8.5.1",
+    "embla-carousel-react": "^8.5.1",
+    "lodash": "4.17.21"
+  },
+  "addons": [
+    "@kitconcept/volto-light-theme"
+  ]
 }
