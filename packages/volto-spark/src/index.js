@@ -12,10 +12,10 @@ const applyConfig = (config) => {
   config.blocks.themes = [
     {
       style: {
-        '--theme-color': '#293676',
+        '--theme-color': 'white',
         '--theme-high-contrast-color': 'darkslategrey',
-        '--theme-foreground-color': 'white',
-        '--theme-low-contrast-foreground-color': 'lightgrey',
+        '--theme-foreground-color': '#293676',
+        '--theme-low-contrast-foreground-color': '#5e6a72',
       },
       name: 'default',
       label: 'Default',

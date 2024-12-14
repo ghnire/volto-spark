@@ -767,7 +767,7 @@
         }
 
         &.active > span {
-          color: var(--theme-foreground-color);
+          color: var(--theme-low-contrast-foreground-color);
         }
 
         & > svg {
@@ -789,7 +789,7 @@
 
       figcaption .title,
       figcaption .description {
-        color: var(--theme-foreground-color);
+        color: var(---theme-low-contrast-foreground-color);
       }
     }
     // Inherit colors from parent Accordion

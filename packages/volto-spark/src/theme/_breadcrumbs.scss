@@ -4,16 +4,21 @@ body.view-contentsview {
   #main .breadcrumbs {
     display: flex;
     .icon {
-      visibility: hidden;
+      //visibility: hidden;
     }
   }
 }
 
 #main .breadcrumbs {
-  .icon {
-    border-radius: 4px;
-    background-color: #00b4c1;
+  background-color: #00b3c0 !important;
+  --link-foreground-color: var(--breadcrumbs-foreground);
+  .breadcrumb {
+    .icon {
+      border-radius: 4px;
+    }
   }
+}
+/*
   a {
     --link-foreground-color: #293676;
     text-decoration: none;
@@ -39,3 +44,4 @@ body.view-contentsview {
     }
   }
 }
+*/
