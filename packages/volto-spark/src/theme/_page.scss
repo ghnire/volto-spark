@@ -2,6 +2,11 @@
 }
 #page-document {
   .blocks-group-wrapper {
+    padding-bottom: 0px;
+    figure {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
     .documentFirstHeading {
       padding: 1rem;
       border: 0 0.5px 0.5px 0.5px #0094a1 solid;
