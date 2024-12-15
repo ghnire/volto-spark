@@ -1,4 +1,5 @@
 import PlannerTemplate from './customizations/volto/components/manage/Blocks/Listing/PlannerTemplate';
+import AppCompactTemplate from './customizations/volto/components/manage/Blocks/Listing/AppCompactTemplate';
 
 const applyConfig = (config) => {
   config.blocks.blocksConfig.listing.variations = [
@@ -7,6 +8,11 @@ const applyConfig = (config) => {
       id: 'listingPlanner',
       title: 'Planner',
       template: PlannerTemplate,
+    },
+    {
+      id: 'listingApps',
+      title: 'App list compact',
+      template: AppCompactTemplate,
     },
   ];
   config.blocks.themes = [
