@@ -7,6 +7,16 @@
       margin-top: 0px;
       margin-bottom: 0px;
     }
+    .heading {
+      .heading-wrapper {
+        .heading {
+          text-align: center;
+          font-size: 46px;
+          font-weight: 700;
+          color: rgb(113, 121, 124);
+        }
+      }
+    }
     .documentFirstHeading {
       padding: 1rem;
       border: 0 0.5px 0.5px 0.5px #0094a1 solid;

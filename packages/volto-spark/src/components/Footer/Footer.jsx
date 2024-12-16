@@ -35,83 +35,32 @@ const Footer = ({ intl }) => {
         <div className="footer-container">
           <div className="footer-message footer-element">
             <div className="footer-element-flex">
-              <p>Some quick links</p>
+              <div className="footer-element-flex-item">
+                <img
+                  className="logo"
+                  src="./spark_logo_blue_svg.svg/@@images/image-386-9ea6c86bc8e402c99fb4036bf8903f6d.svg"
+                />
+              </div>
+              <div className="footer-element-flex-item">
+                <p>
+                  <strong>Spark Holland B.V.</strong>
+                  <br />
+                  Waanderweg 40
+                  <br />
+                  7812HZ Emmen
+                  <br />
+                  The Netherlands
+                </p>
+                <p>
+                  Phone: +31 591 631 700
+                  <br />
+                  E-mail: info@sparkholland.com
+                </p>
+                <p>KvK: 04034580</p>
+              </div>
             </div>
           </div>
-          <div className="footer-element">
-            <ul className="footer-links">
-              {!isEmpty(footerLinks?.blocks)
-                ? footerLinks.blocks_layout.items.map((itemId) => {
-                    const link = footerLinks.blocks[itemId];
-                    const title = link.title || link.href[0]['title'];
-                    const href = flattenToAppURL(link.href[0]['@id']);
-
-                    if (!href) return null;
-
-                    return (
-                      <li className="item" key={href}>
-                        <UniversalLink href={href}>{title}</UniversalLink>
-                      </li>
-                    );
-                  })
-                : siteActions?.length
-                  ? siteActions.map((item) => (
-                      <li className="item" key={item.id}>
-                        <UniversalLink
-                          className="item"
-                          href={
-                            settings.isMultilingual
-                              ? `/${lang}/${
-                                  item.url
-                                    ? flattenToAppURL(item.url)
-                                    : addAppURL(item.id)
-                                }`
-                              : item.url
-                                ? flattenToAppURL(item.url)
-                                : addAppURL(item.id)
-                          }
-                        >
-                          {item?.title}
-                        </UniversalLink>
-                      </li>
-                    ))
-                  : null}
-            </ul>
-            <ul className="footer-logos">
-              {!isEmpty(footerLogos?.blocks)
-                ? footerLogos.blocks_layout.items.map((itemId) => {
-                    const logo = footerLogos.blocks[itemId];
-                    let logoHref, hrefTitle, href, srcAlt, src;
-                    if (logo?.href) {
-                      hrefTitle = logo.href[0]['title'];
-                      href = flattenToAppURL(logo.href[0]['@id']);
-                    }
-                    if (logo?.logo) {
-                      logoHref = logo.logo[0]['@id'];
-                      srcAlt = logo['alt'];
-                      src = `${flattenToAppURL(logoHref)}/${logo.logo[0].image_scales[logo.logo[0].image_field][0].download}`;
-                    }
-
-                    if (!src) return null;
-
-                    return (
-                      <li className="item" key={href}>
-                        <ConditionalLink
-                          condition={href}
-                          to={href}
-                          title={hrefTitle || srcAlt}
-                        >
-                          <img src={src} alt={srcAlt} />
-                        </ConditionalLink>
-                      </li>
-                    );
-                  })
-                : null}
-            </ul>
-            <div className="logo">
-              <Logo />
-            </div>
-          </div>
+          <div className="footer-element"></div>
           <div className="footer-message footer-element">
             <div className="footer-element-flex">
               <p className="footer-message-sitename">

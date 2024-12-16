@@ -1541,6 +1541,9 @@ importers:
       '@eeacms/volto-accordion-block':
         specifier: 10.4.6
         version: 10.4.6
+      '@eeacms/volto-block-divider':
+        specifier: ^7.0.1
+        version: 7.0.1(react@18.2.0)
       '@eeacms/volto-columns-block':
         specifier: ^8.0.1
         version: 8.0.1(react@18.2.0)
@@ -2471,6 +2474,9 @@ packages:
 
   '@eeacms/volto-accordion-block@10.4.6':
     resolution: {integrity: sha512-IZfAg8By1dZA2SSr4MNu2gFCs0F67/ZMAlpdqkevSMvkBREjny97cEFtMjkhGyOc3MBTp1vd0TtqvL3cN1GehQ==}
+
+  '@eeacms/volto-block-divider@7.0.1':
+    resolution: {integrity: sha512-YGfnwmVzA0cR1MYsANx9dS4U/ao1HW6VsrUSHi3dS3pxfNnvnPKmtdIj+tpH2TF7z2c8+1TTBDrAFSQhhNXWew==}
 
   '@eeacms/volto-columns-block@8.0.1':
     resolution: {integrity: sha512-LWxVlcX7HfRqG6qI6mjowqqgxqnATyp9de5BYwBC07iTrIZzBJrLesnvVy6bVSvi95b+3Hd8xFxyo8tkMlvlIw==}
@@ -11489,6 +11495,11 @@ packages:
       react: ^16.8.5
       react-dom: ^16.8.5
 
+  react-color@2.18.1:
+    resolution: {integrity: sha512-X5XpyJS6ncplZs74ak0JJoqPi+33Nzpv5RYWWxn17bslih+X7OlgmfpmGC1fNvdkK7/SGWYf1JJdn7D2n5gSuQ==}
+    peerDependencies:
+      react: '*'
+
   react-color@2.19.3:
     resolution: {integrity: sha512-LEeGE/ZzNLIsFWa1TMe8y5VYqr7bibneWmvJwm1pCn/eNmrabWDh659JSPn9BuaMpEfU83WTOJfnCcjDZwNQTA==}
     peerDependencies:
@@ -15243,6 +15254,13 @@ snapshots:
   '@eeacms/volto-accordion-block@10.4.6':
     dependencies:
       '@eeacms/volto-widget-theme-picker': 2.0.0
+
+  '@eeacms/volto-block-divider@7.0.1(react@18.2.0)':
+    dependencies:
+      '@eeacms/volto-widget-theme-picker': 2.0.0
+      react-color: 2.18.1(react@18.2.0)
+    transitivePeerDependencies:
+      - react
 
   '@eeacms/volto-columns-block@8.0.1(react@18.2.0)':
     dependencies:
@@ -27237,6 +27255,16 @@ snapshots:
       use-memo-one: 1.1.3(react@18.2.0)
     transitivePeerDependencies:
       - react-native
+
+  react-color@2.18.1(react@18.2.0):
+    dependencies:
+      '@icons/material': 0.2.4(react@18.2.0)
+      lodash: 4.17.21
+      material-colors: 1.2.6
+      prop-types: 15.7.2
+      react: 18.2.0
+      reactcss: 1.2.3(react@18.2.0)
+      tinycolor2: 1.6.0
 
   react-color@2.19.3(react@18.2.0):
     dependencies:

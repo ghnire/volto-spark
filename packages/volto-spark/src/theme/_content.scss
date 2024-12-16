@@ -1,3 +1,7 @@
+#homecontent {
+  padding: 20px;
+}
+
 .sph-home-news {
   .items {
     background-color: #fff !important;
@@ -11,14 +15,14 @@
         padding: 10px;
       }
       .listing-body {
+        padding-right: 120px !important;
         h3 {
           color: #293676 !important;
         }
         p {
-          border-radius: 5px;
-          background-color: inherit;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          font-size: 0.9rem !important;
+          padding: 0 !important;
+          font-size: 18px;
+          font-weight: var(--default-font-weight) !important;
         }
       }
     }
@@ -85,6 +89,9 @@
       }
       h3 {
         color: #293676 !important;
+        font-size: 20x;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
       }
       span {
         color: #5e6a71 !important;
