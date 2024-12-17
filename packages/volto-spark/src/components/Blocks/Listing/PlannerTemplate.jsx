@@ -7,15 +7,14 @@ import FormattedDate from '@plone/volto/components/theme/FormattedDate/Formatted
 import { isInternalURL } from '@plone/volto/helpers/Url/Url';
 import calendarSVG from '@plone/volto/icons/calendar.svg';
 import clockSVG from '@plone/volto/icons/clock.svg';
-import worldSVG from '@plone/volto/icons/world.svg';
+import worldSVG from '@plone/volto/icons/map.svg';
 import { Icon } from '@plone/volto/components';
 
 const PlannerTemplate = ({ items, linkTitle, linkHref, isEditMode }) => {
   let link = null;
   let href = linkHref?.[0]?.['@id'] || '';
   const dateFormat = {
-    year: 'numeric',
-    month: 'short',
+    month: 'numeric',
     day: 'numeric',
   };
   const timeFormat = {
@@ -41,15 +40,12 @@ const PlannerTemplate = ({ items, linkTitle, linkHref, isEditMode }) => {
           <div className="listing-item" key={item['@id']}>
             <ConditionalLink item={item} condition={!isEditMode}>
               <div className="listing-body">
-                <h3>{item.title ? item.title : item.id}</h3>
                 <div>
                   <p className="listing-event-whenwhere">
-                    <div className="listing-event-container">
-                      <div className="listing-event-container third">
-                        <div className="listing-event-date-row">
-                          <div classname="listing-event-icon led-row-item">
-                            <Icon name={calendarSVG} size="24px" />
-                          </div>
+                    <div className="le-ww-container">
+                      <div className="le-ww-row">
+                        <div className="le-ww-column">
+                          <Icon name={calendarSVG} size="24px" />
                           <div>
                             <span nowrap>
                               <FormattedDate
@@ -60,12 +56,8 @@ const PlannerTemplate = ({ items, linkTitle, linkHref, isEditMode }) => {
                             </span>
                           </div>
                         </div>
-                      </div>
-                      <div className="listing-event-container third">
-                        <div className="listing-event-date-row">
-                          <div classname="listing-event-icon led-row-item">
-                            <Icon name={clockSVG} size="24px" />
-                          </div>
+                        <div className="le-ww-column">
+                          <Icon name={clockSVG} size="24px" />
                           <div>
                             <span nowrap>
                               <FormattedDate
@@ -83,11 +75,9 @@ const PlannerTemplate = ({ items, linkTitle, linkHref, isEditMode }) => {
                           </div>
                         </div>
                       </div>
-                      <div className="listing-event-container third">
-                        <div className="listing-event-date-row">
-                          <div classname="listing-event-icon led-row-item">
-                            <Icon name={worldSVG} size="24px" />
-                          </div>
+                      <div className="le-ww-row">
+                        <div className="le-ww-column">
+                          <Icon name={worldSVG} size="24px" />
                           <div>
                             <span nowrap>{item.location}</span>
                           </div>
@@ -96,9 +86,8 @@ const PlannerTemplate = ({ items, linkTitle, linkHref, isEditMode }) => {
                     </div>
                   </p>
                 </div>
-                <p>
-                  <span className="dontwrap">{item.description}</span>
-                </p>
+                <h3>{item.title ? item.title : item.id}</h3>
+                <span className="dontwrap">{item.description}</span>
               </div>
             </ConditionalLink>
           </div>

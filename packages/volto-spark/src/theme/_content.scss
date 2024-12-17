@@ -31,73 +31,50 @@
     }
   }
 }
-.sph-home-events {
-  padding-left: 20px;
-  color: #5e6a71;
-  #events {
-    border: 0.5px solid #00b3c0;
-    color: white;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    background: linear-gradient(
-      90deg,
-      rgba(0, 212, 255, 1) 0%,
-      rgba(41, 54, 118, 1) 70%
-    );
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    font-weight: 700;
-    text-align: center;
+#events {
+  border-radius: 25px;
+  box-shadow: 0 0 10px 5px var(--listing-box-shadow-color);
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  .heading {
+    font-size: 30px !important;
+    text-align: left !important;
+    font-weight: var(--headling-font-weight);
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+  }
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 0px !important;
+  }
+  span {
+    color: var(--headline-foreground);
+  }
+  .listing-event-whenwhere {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
   }
   .listing-item {
-    padding-bottom: 0px !important;
-    border-bottom: 0px !important;
-    margin-top: 5px;
-    margin-bottom: 25px !important;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    text-align: center;
+    margin-bottom: 15px;
     .listing-body {
-      padding-top: 10px;
-      .listing-event-whenwhere {
-        padding-top: 8px !important;
-        padding-bottom: 8px !important;
-      }
-      .listing-event-container {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        .listing-event-date-row {
-          display: flex;
-          width: 100%;
-          flex-direction: column;
-          align-items: center;
-        }
-        .third {
-          width: 33%;
-          display: flex;
-          align-items: center;
-        }
-      }
-      .dontwrap {
-        word-break: normal !important;
-        word-wrap: normal !important;
-      }
-      h2 {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        background: white;
-        color: #5e6a72 !important;
-        //color: #000 !important;
-        font-size: 1.1rem !important;
-      }
-      span {
-        color: #5e6a71 !important;
-      }
+      border-top: 1px solid #ceeaee;
     }
-    .listing-body p {
-      border-top: 2px solid #00b4c1;
-      background: white;
-      font-size: 0.9rem !important;
+  }
+  .le-ww-container {
+    width: 100%;
+  }
+  .le-ww-row {
+    display: flex;
+    flex: 100%;
+    width: 100%;
+    margin-bottom: 5px;
+    .icon {
+      margin-right: 5px;
+    }
+    .le-ww-column {
+      margin-right: 20px;
+      display: flex;
     }
   }
 }
