@@ -60,7 +60,15 @@ const Footer = ({ intl }) => {
               </div>
             </div>
           </div>
-          <div className="footer-element"></div>
+          <div className="footer-element">
+            <ul>
+              <li>
+                <UniversalLink href="/nieuws-archief">
+                  Nieuws archief
+                </UniversalLink>
+              </li>
+            </ul>
+          </div>
           <div className="footer-message footer-element">
             <div className="footer-element-flex">
               <p className="footer-message-sitename">

@@ -1,6 +1,12 @@
 #view {
 }
 #page-document {
+  .headline {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--headline-foreground);
+    font-weight: var(--header-font-weight);
+  }
   .blocks-group-wrapper {
     padding-bottom: 0px;
     figure {
@@ -18,15 +24,7 @@
       }
     }
     .documentFirstHeading {
-      padding: 1rem;
-      border: 0 0.5px 0.5px 0.5px #0094a1 solid;
-      border-radius: 0 0 10px 10px;
-      background: #00b4c1;
-      box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
-      color: #e7e8e9;
-      text-align: center;
-      border-top: 0px;
-      margin-bottom: 25px;
+      display: none;
     }
     p {
       padding: 1rem;
