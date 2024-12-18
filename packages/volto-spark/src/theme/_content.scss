@@ -5,42 +5,48 @@
     font-size: 20px !important;
     font-weight: var(--header-font-weight) !important;
   }
-}
-
-.sph-home-news {
-  .items {
-    background-color: #fff !important;
-    padding-bottom: 40px;
-    .listing-item {
-      background-color: inherit;
-      margin-bottom: 5px;
-      a {
-        background-color: inherit;
-        padding: 10px;
-      }
-      .listing-body {
-        p {
-          padding: 0 !important;
-          font-size: 18px;
-          font-weight: var(--default-font-weight) !important;
-        }
-        img {
-          margin: 0px !important;
-        }
+  .home-left {
+    .figure {
+      box-shadow: 0 0 10px 5px var(--listing-box-shadow-color);
+      border-radius: 25px;
+    }
+    .blocks-group-wrapper {
+      .block {
+        margin-bottom: 40px !important;
       }
     }
   }
 }
-#events {
+
+.sph-home-news {
+  #actueel-spark-nieuws {
+    margin-bottom: 10px !important;
+    color: var(--spark-grey) !important;
+    font-weight: var(--header-font-weight);
+  }
+}
+
+.sph-home-events {
+  .blocks-group-wrapper {
+    margin-left: 10px !important;
+    margin-right: 0 !important;
+  }
+}
+
+.listingPlanner {
   border-radius: 25px;
+  margin-top: 40px;
   box-shadow: 0 0 10px 5px var(--listing-box-shadow-color);
   padding-top: 20px;
-  padding-left: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 20px;
-  .heading {
-    font-size: 30px !important;
+  .headline {
+    width: 100%;
+    font-size: 24px !important;
     text-align: left !important;
-    font-weight: var(--headling-font-weight);
+    font-weight: var(--header-font-weight);
+    color: var(--spark-grey);
     margin-top: 0px !important;
     margin-bottom: 10px !important;
   }
@@ -56,13 +62,16 @@
     padding-left: 0px !important;
   }
   .listing-item {
+    width: 100%;
     margin-bottom: 15px;
     .listing-body {
       border-top: 1px solid #ceeaee;
+      width: 100%;
     }
   }
   .le-ww-container {
     width: 100%;
+    padding-top: 0.5rem;
   }
   .le-ww-row {
     display: flex;

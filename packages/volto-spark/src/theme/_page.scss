@@ -1,4 +1,11 @@
 #view {
+  .block.separator {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    .line:not(.inner)::after {
+      border-top-color: var(--light-blue) !important;
+    }
+  }
 }
 #page-document {
   .headline {
@@ -12,14 +19,19 @@
     figure {
       margin-top: 0px;
       margin-bottom: 0px;
+      img {
+        border-radius: var(--border-radius-img);
+        box-shadow: 0 0 10px 5px var(--listing-box-shadow-color);
+      }
     }
     .heading {
       .heading-wrapper {
-        .heading {
-          text-align: center;
+        h2 {
+          text-align: left;
           font-size: 46px;
           font-weight: 700;
           color: rgb(113, 121, 124);
+          margin-bottom: 20px;
         }
       }
     }
@@ -27,7 +39,7 @@
       display: none;
     }
     p {
-      padding: 1rem;
+      padding: 0.5rem;
       background-color: white;
       color: #5e6a72;
       font-weight: 200;

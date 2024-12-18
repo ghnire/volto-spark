@@ -22,26 +22,32 @@ const AppCompactTemplate = ({ items, linkTitle, linkHref, isEditMode }) => {
 
   return (
     <>
-      <div className="items listing-app-items">
-        {items.map((item) => {
-          return (
-            <div className="listing-item listing-app-compact" key={item['@id']}>
-              <ConditionalLink item={item} condition={!isEditMode}>
-                <Component
-                  componentName="PreviewImage"
-                  item={item}
-                  alt=""
-                  className="listing-app-icon"
-                />
-                <div className="listing-body">
-                  <span className="listing-app-title">
-                    {item.title ? item.title : item.id}
-                  </span>
-                </div>
-              </ConditionalLink>
-            </div>
-          );
-        })}
+      <div className="listing-app-items">
+        <h2 className="heading">Apps</h2>
+        <div className="items">
+          {items.map((item) => {
+            return (
+              <div
+                className="listing-item listing-app-compact"
+                key={item['@id']}
+              >
+                <ConditionalLink item={item} condition={!isEditMode}>
+                  <Component
+                    componentName="PreviewImage"
+                    item={item}
+                    alt=""
+                    className="listing-app-icon"
+                  />
+                  <div className="listing-body">
+                    <span className="listing-app-title">
+                      {item.title ? item.title : item.id}
+                    </span>
+                  </div>
+                </ConditionalLink>
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       {link && <div className="footer">{link}</div>}

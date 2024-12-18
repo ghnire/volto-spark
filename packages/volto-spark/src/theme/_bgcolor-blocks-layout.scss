@@ -759,7 +759,7 @@
   .accordion-block,
   .block-editor-accordion {
     .ui.styled.accordion {
-      border-color: var(--theme-foreground-color);
+      border-color: var(--light-blue);
 
       .title.accordion-title {
         background: var(--theme-color);
@@ -773,11 +773,11 @@
         }
 
         & > svg {
-          fill: var(--theme-low-contrast-foreground-color) !important;
+          fill: var(--light-blue) !important;
         }
 
         &.active > svg {
-          fill: var(--theme-foreground-color) !important;
+          fill: var(--accent-color) !important;
         }
       }
 
@@ -786,7 +786,7 @@
       }
 
       &:last-child {
-        border-color: var(--theme-foreground-color);
+        border-color: var(--light-blue);
       }
 
       figcaption .title,
